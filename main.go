@@ -31,4 +31,11 @@ func main() {
 	// fmt.Println(num2)
 	// num3:=num[1:2]
 	// fmt.Println(num3)
+	
+
+	// //Strings
+	// var str string="India is my country"
+	// fmt.Println(strings.Contains(str,"is"))
+	// fmt.Println((strings.Index(str,"is")))
+	// fmt.Println(strings.Split(str," "))
 }
