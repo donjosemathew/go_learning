@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"sort"
-)
+import "fmt"
 
 func main() {
 	// fmt.Println("ds")
@@ -43,9 +40,19 @@ func main() {
 	// fmt.Println((strings.Index(str,"is")))
 	// fmt.Println(strings.Split(str," "))
 
-	var ar = []int{34, 56, 8, 2, 47}
-	sort.Ints(ar)
-	fmt.Println(ar)
-	index:=sort.SearchInts(ar,8)	
-	fmt.Println(index)
+	// //Sort
+	// var ar = []int{34, 56, 8, 2, 47}
+	// sort.Ints(ar)
+	// fmt.Println(ar)
+	// index:=sort.SearchInts(ar,8)
+	// fmt.Println(index)
+
+	//loops
+	for x := 0; x < 5; x++ {
+		fmt.Println(x)
+	}
+	name:=[]string{"India","Anertica","Sweden","Istanbul"}
+	for index,values:=range name{
+		fmt.Println(index,values)
+	}
 }
