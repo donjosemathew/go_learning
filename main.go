@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"sort"
+)
+
 func main() {
 	// fmt.Println("ds")
 
@@ -31,11 +36,16 @@ func main() {
 	// fmt.Println(num2)
 	// num3:=num[1:2]
 	// fmt.Println(num3)
-	
 
 	// //Strings
 	// var str string="India is my country"
 	// fmt.Println(strings.Contains(str,"is"))
 	// fmt.Println((strings.Index(str,"is")))
 	// fmt.Println(strings.Split(str," "))
+
+	var ar = []int{34, 56, 8, 2, 47}
+	sort.Ints(ar)
+	fmt.Println(ar)
+	index:=sort.SearchInts(ar,8)	
+	fmt.Println(index)
 }
