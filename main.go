@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+func update(x *string) {
+	*x = "Athulya"
+}
 func main() {
 	// fmt.Println("ds")
 
@@ -70,17 +73,23 @@ func main() {
 	// cylceName(names,wishMe)
 
 	//maps
+	// menu := map[string]float64{
+	// 	"india":  23.4,
+	// 	"usa":    263.3,
+	// 	"france": 34.8,
+	// }
+	// for k,v :=range menu{
+	// 	fmt.Println(k,"-",v)
+	// }
+	// menu["indian"]=23.44
+	// fmt.Println(menu)
 
-	menu := map[string]float64{
-		"india":  23.4,
-		"usa":    263.3,
-		"france": 34.8,
-	}
-	for k,v :=range menu{
-		fmt.Println(k,"-",v)
-	}
-	menu["indian"]=23.44
-	fmt.Println(menu)
-	
+	//pointers
+	name := "athulya"
+	m := &name
+	fmt.Println(name,m)
+	update(m)
+	fmt.Println(*m)
+
 
 }
