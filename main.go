@@ -1,5 +1,6 @@
 package main
 
+import "fmt"
 
 func main() {
 	// fmt.Println("ds")
@@ -54,12 +55,11 @@ func main() {
 	// for index,values:=range name{
 	// 	fmt.Println(index,values)
 	// }
-	
 
 	//functions
 	// func wishMe(name string) {
 	// 	fmt.Printf("Hi Mr %v",name)
-	
+
 	// }
 	// func cylceName(n []string, f func(string)) {
 	// 	for _, v := range n {
@@ -68,5 +68,19 @@ func main() {
 	// }
 	// var names=[]string{"Athulya","nIYA","Jesuit"}
 	// cylceName(names,wishMe)
+
+	//maps
+
+	menu := map[string]float64{
+		"india":  23.4,
+		"usa":    263.3,
+		"france": 34.8,
+	}
+	for k,v :=range menu{
+		fmt.Println(k,"-",v)
+	}
+	menu["indian"]=23.44
+	fmt.Println(menu)
+	
 
 }
