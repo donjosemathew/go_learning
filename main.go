@@ -2,9 +2,6 @@ package main
 
 import "fmt"
 
-func update(x *string) {
-	*x = "Athulya"
-}
 func main() {
 	// fmt.Println("ds")
 
@@ -85,11 +82,15 @@ func main() {
 	// fmt.Println(menu)
 
 	//pointers
-	name := "athulya"
-	m := &name
-	fmt.Println(name,m)
-	update(m)
-	fmt.Println(*m)
-
+	// func update(x *string) {
+	// 	*x = "Athulya"
+	// }
+	// name := "athulya"
+	// m := &name
+	// fmt.Println(name,m)
+	// update(m)
+	// fmt.Println(*m)
+	myBill := newBill("Athulya issa")
+	fmt.Println(myBill)
 
 }
