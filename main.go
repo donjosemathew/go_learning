@@ -90,7 +90,8 @@ func main() {
 	// fmt.Println(name,m)
 	// update(m)
 	// fmt.Println(*m)
-	myBill := newBill("Athulya issa")
-	fmt.Println(myBill)
 
+	//Struct
+	myBill := newBill("Athulya issa")
+	fmt.Println(myBill.format())
 }
